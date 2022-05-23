@@ -1,0 +1,34 @@
+ 
+Ejecutar los Siguiente Comandos para Docker File 
+
+-- Eureka Service 
+
+docker build -t "eurekaservice" .
+
+docker run --name eurekaservice -dp 8761:8761 eurekaservice:latest
+
+-- Bank Service 
+
+docker build -t "bankservice" .
+
+docker run --name bankservice -dp 8080:8080 bankservice:latest
+
+-- Customer Service
+
+docker build -t "customerservice" .
+
+docker run --name customerservice -dp 8081:8081 customerservice:latest
+
+-- BankAccount Service
+
+docker build -t "bankaccountservice" .
+
+docker run --name bankaccountservice -dp 8082:8082 bankaccountservice:latest
+
+-- Credits Service
+
+docker build -t "creditsservice" .
+
+docker run --name creditsservice -dp 8083:8083 creditsservice:latest
+
+

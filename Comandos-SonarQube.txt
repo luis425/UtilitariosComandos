@@ -1,0 +1,23 @@
+-- Customer
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=com.nttdata.Semana01.Customer:CustomerService -Dsonar.host.url=http://localhost:9000 -Dsonar.login=cd60b16f6a599025bf86a91fffa57fa108b4445f
+
+-- Gateway
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=com.gateway:Gateway -Dsonar.host.url=http://localhost:9000 -Dsonar.login=0f92481b2155f4e8183b3eff0ad63588d7584c5c
+
+-- Bank 
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=com.nttdata.Semana01.Bank:BankService -Dsonar.host.url=http://localhost:9000 -Dsonar.login=8d4d044277b1d9f5540dc3bc7f3ee562196075f8
+
+-- BankAccount 
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=com.nttdata.Semana01.BankAccount:BankAccountService -Dsonar.host.url=http://localhost:9000 -Dsonar.login=e850b3e529c9c015ba9e9e768a3222aaf61a63d8
+
+-- Credits
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=com.nttdata.Semana01.Credits:CreditsService -Dsonar.host.url=http://localhost:9000 -Dsonar.login=3f2c04a03c264ba0cd2afa890e7566b5a50529b7
+
+-- Eureka
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=com.eureka.service:EurekaService -Dsonar.host.url=http://localhost:9000 -Dsonar.login=3a727dd603d3b9abcb99bf345b47eee4655a2ecc
