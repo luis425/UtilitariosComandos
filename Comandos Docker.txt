@@ -31,4 +31,9 @@ docker build -t "creditsservice" .
 
 docker run --name creditsservice -dp 8083:8083 creditsservice:latest
 
+-- Debt Service
+
+docker build -t "debtservice" .
+
+docker run --name debtservice -dp 8084:8084 debtservice:latest
 
